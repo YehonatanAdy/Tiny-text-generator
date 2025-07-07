@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tiny Text Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🧠 Tiny Text Generator</h1>
+    <textarea id="input" placeholder="Type your text here..."></textarea>
+
+    <div class="output-block">
+      <h2>🪄 Small Caps</h2>
+      <div id="smallcaps" class="output-text"></div>
+      <button onclick="copyToClipboard('smallcaps')">Copy</button>
+    </div>
+
+    <div class="output-block">
+      <h2>🔲 Squares</h2>
+      <div id="squares" class="output-text"></div>
+      <button onclick="copyToClipboard('squares')">Copy</button>
+    </div>
+
+    <div class="output-block">
+      <h2>𝓕𝓪𝓷𝓬𝔂 Cursive</h2>
+      <div id="fancy" class="output-text"></div>
+      <button onclick="copyToClipboard('fancy')">Copy</button>
+    </div>
+
+    <button id="toggleMore">➕ More Options</button>
+
+    <div id="moreOptions" style="display: none; margin-top: 20px;">
+      <div class="output-block">
+        <h2>🔄 Upside Down</h2>
+        <div id="upsidedown" class="output-text"></div>
+        <button onclick="copyToClipboard('upsidedown')">Copy</button>
+      </div>
+
+      <div class="output-block">
+        <h2>🪞 Mirrored</h2>
+        <div id="mirrored" class="output-text"></div>
+        <button onclick="copyToClipboard('mirrored')">Copy</button>
+      </div>
+
+      <div class="output-block">
+        <h2>🎲 Random Mix</h2>
+        <div id="random" class="output-text"></div>
+        <button onclick="copyToClipboard('random')">Copy</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
